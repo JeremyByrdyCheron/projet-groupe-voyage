@@ -66,6 +66,10 @@ input {
   margin-left: 2vh;
 }
 
+.input-error {
+  border: 2px solid red;
+}
+
 @media (min-width: 1024px) {
   img {
     display: flex;
