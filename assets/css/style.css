@@ -1,3 +1,9 @@
+*{
+    color: #F7F4E9;
+    margin: 0px;
+    padding: 0px;
+}
+
 /* header */
 
 
@@ -11,10 +17,59 @@
 
 
 /* destinations phares */
+#topDestinations{
+    background-color: #E7C79B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
 
 
+#topDestinations img{
+    max-width: 250px;
+    display: flex;
+    margin: auto;
+}
+#topDestinations button{
+    padding: 5px;
+    border: none;
+    border-radius: 90px;
+    background-color: #709791;
+    display: flex;
+    margin: auto;
+}
 
+#topDestinations h3{
+    display: flex;
+    justify-content: center;
+}
 
+#topDestinations p {
+    justify-content: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+
+    #cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Crée une grille avec 2 colonnes */
+      gap: 20px; /* Ajoute un espace de 20px entre les cards */
+    }
+  
+    /* Règles pour chaque projet */
+    .card {
+      border: 10px solid #ccc; /* Ajoute une bordure autour de chaque projet */
+      padding: 10px; /* Un peu d'espace autour de chaque projet */
+      box-sizing: border-box;
+    }
+    /* Les images prendront toute la largeur de leur conteneur */
+    .card img {
+      width: 100%;
+      height: auto; /* Pour garder les proportions de l'image */
+    }
+  }
 /* galerie photo */
 
 
