@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>projet groupe</title>
-  </head>
-  <body>
-    <header>
 
-    </header>
-    <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>projet groupe</title>
+</head>
 
-    </nav>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer>
+<body>
+  <header>
 
-    </footer>
-  </body>
+  </header>
+  <nav>
+
+  </nav>
+  <main>
+    <section></section>
+    <section>
+      <div class="devis">
+      <img src="assets/Ressources-etudiant/Fichier 1.png" alt="Logo-evasion-et-découvertes">
+      <br>
+      <h2>C'est parti pour le devis !</h2>
+      <br>
+      <form action="" method="get" class="formulaire-devis">
+        <div class="formulaire-devis">
+          <label for="nom">Nom : </label>
+          <br>
+          <input type="text" placeholder="Ex : Doe" name="nom" id="nom" required />
+        </div>
+        <br>
+        <div class="formulaire-devis">
+          <label for="prenom">Prénom : </label>
+          <br>
+          <input type="text" placeholder="Ex : John" name="prenom" id="prenom" required />
+        </div>
+        <br>
+        <div class="formulaire-devis">
+          <label for="destination">Destination : </label>
+          <br>
+          <input type="text" placeholder="Ex : Autriche" name="destination" id="destination" required />
+        </div>
+        <br>
+        <br>
+        <p id="dates">Dates de votre voyage :</p>
+        <ul>
+          <li><label for="depart">Départ : </label>
+            <br>
+            <input type="text" placeholder="Ex : 04" name="jour" required minlength="2" maxlength="2" size="6" id="jour"
+              required />
+            <input type="text" placeholder="Ex : 08" name="mois" required minlength="2" maxlength="2" size="6" id="mois"
+              required />
+            <input type="text" placeholder="Ex : 2025" name="annee" required minlength="4" maxlength="4" size="8"
+              id="annee" required />
+          </li>
+          <br>
+          <li><label for="retour">Retour : </label>
+            <br>
+            <input type="text" placeholder="Ex : 04" name="jour" required minlength="2" maxlength="2" size="6" id="jour"
+              required />
+            <input type="text" placeholder="Ex : 08" name="mois" required minlength="2" maxlength="2" size="6" id="mois"
+              required />
+            <input type="text" placeholder="Ex : 2025" name="annee" required minlength="4" maxlength="4" size="8"
+              id="annee" required />
+          </li>
+        </ul>
+        <br>
+        <br>
+        <div class="formulaire-devis">
+          <label for="budget">Votre budget : </label>
+          <br>
+          <input type="text" placeholder="Ex : 1234" name="destination" id="destination" required />
+        </div>
+      </form>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>

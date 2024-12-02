@@ -9,6 +9,72 @@
 
 /* devis */
 
+* {
+    margin: 0;
+  }
+  
+  .devis {
+    background-color: rgba(112, 151, 145, 1);
+    border-radius: 5%;
+  }
+  
+  img {
+    display: flex;
+    margin: auto;
+    width: 178px;
+    height: 58px;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(247, 244, 233, 1);
+  }
+  
+  label {
+      font-weight: 600;
+      font-size: 20px;
+      color: rgba(247, 244, 233, 1);
+      margin-left: 2vh;
+  }
+  
+  #dates {
+      font-weight: 600;
+      font-size: 20px;
+      color: rgba(247, 244, 233, 1);
+      text-align: left;
+      margin-left: 2vh;
+  }
+  
+  #budget {
+      font-weight: 600;
+      font-size: 20px;
+      color: rgba(247, 244, 233, 1);
+      text-align: left;
+      margin-left: 2vh;
+  }
+  
+  li {
+      color: rgba(247, 244, 233, 1);
+  }
+  
+  input {
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-left: 2vh;
+  }
+  
+  @media (min-width: 1024px) {
+    img {
+      display: flex;
+      margin: auto;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
 
 /* destinations phares */
 
