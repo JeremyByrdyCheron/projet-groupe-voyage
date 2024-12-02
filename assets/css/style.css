@@ -20,7 +20,37 @@
 
 
 /* témoignages */
-
-
+.temoignage {
+    background-color: #E7C79B;
+    border-radius: 5px;
+    padding: 5px;
+}
+.temoignage h2{
+    display: flex;
+    justify-content: center;
+    color: #f7f4e9;
+}
+/* mise en page des commantaires */
+.commentaire div{
+    background-color: #f7f4e9;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.commentaire div div{
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+/* taille image h3 */
+h3 {
+    display: flex;
+    justify-content: space-between;
+}
+#four_star{
+    height: auto;
+    width: 10%;
+}
 
 /* footer */
