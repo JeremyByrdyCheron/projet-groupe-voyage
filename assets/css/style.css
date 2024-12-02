@@ -41,7 +41,7 @@
 
 }
 .commentaire div div{
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -49,20 +49,28 @@
 h3 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* taille image */
 #four_star{
-    height: auto;
-    width: 10%;
+
+    width: 100px;
 }
 #five_star{
-    height: auto;
-    width: 10%;
-}
-#profil{
-    border-radius: 100%;
-    height: 10%;
-    width: 10%;
+
+    width: 100px;
 }
 
+
+#profil{
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+/* taille police des dates */
+#date{
+    font-size: small;
+}
 /* footer */
