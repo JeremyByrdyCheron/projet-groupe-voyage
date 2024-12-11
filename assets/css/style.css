@@ -1,81 +1,128 @@
-*{
-    color: #F7F4E9;
-    margin: 0px;
-    padding: 0px;
+* {
+  color: #f7f4e9;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* header */
 
-
 /* barre de nav */
-
 
 /* partie accueil */
 
-
 /* devis */
 
-
 /* destinations phares */
-#topDestinations{
-    background-color: #E7C79B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+
+.card {
+  border: 10px solid #cccccc; /* Ajoute une bordure autour de chaque projet */
+  padding: 10px; /* Un peu d'espace autour de chaque projet */
+  box-sizing: border-box;
 }
 
 
-#topDestinations img{
-    max-width: 250px;
-    display: flex;
-    margin: auto;
-}
-#topDestinations button{
-    padding: 5px;
-    border: none;
-    border-radius: 90px;
-    background-color: #709791;
-    display: flex;
-    margin: auto;
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4, 35%); /* Crée une grille avec 2 colonnes */
+  gap: 10px; /* Ajoute un espace de 10px entre les cards */
 }
 
-#topDestinations h3{
-    display: flex;
-    justify-content: center;
+#topDestinations {
+  background-color: #e7c79b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#topDestinations img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+#topDestinations button {
+  padding: 10px;
+  border: none;
+  border-radius: 90px;
+  background-color: #709791;
+  display: flex;
+  margin: auto;
+}
+
+#topDestinations h3 {
+  display: flex;
+  justify-content: center;
 }
 
 #topDestinations p {
-    justify-content: center;
-    padding: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* définit la bordure et la marge interne des cartes */
+
+/* Les images prendront toute la largeur de leur conteneur */
+
+#cards {
+  padding: 0px;
+  width: 1fr;
+  overflow: hidden;
+
+}
+.card img {
+  height: 10%;
+}
+.card {
+  float: left;
+  animation: glissement 60s infinite;
+}
+
+@keyframes glissement {
+  0% {
+    transform: translateX(40%);
+  }
+  20% {
+    transform: translateX(40%);
+  }
+  25% {
+    transform: translateX(-36%);
+  }
+  45% {
+    transform: translateX(-36%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-150%);
+  }
+  95% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
 }
 
 @media screen and (min-width: 1025px) {
-
-    #cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Crée une grille avec 2 colonnes */
-      gap: 20px; /* Ajoute un espace de 20px entre les cards */
-    }
-  
-    /* Règles pour chaque projet */
-    .card {
-      border: 10px solid #ccc; /* Ajoute une bordure autour de chaque projet */
-      padding: 10px; /* Un peu d'espace autour de chaque projet */
-      box-sizing: border-box;
-    }
-    /* Les images prendront toute la largeur de leur conteneur */
-    .card img {
-      width: 100%;
-      height: auto; /* Pour garder les proportions de l'image */
-    }
+  /* Règles pour chaque projet */
+  .card {
+    border: 10px solid #cccccc; /* Ajoute une bordure autour de chaque projet */
+    padding: 10px; /* Un peu d'espace autour de chaque projet */
+    box-sizing: border-box;
   }
+  /* Les images prendront toute la largeur de leur conteneur */
+  .card img {
+    width: 100%;
+    height: auto; /* Pour garder les proportions de l'image */
+  }
+}
 /* galerie photo */
 
-
-
 /* témoignages */
-
-
 
 /* footer */
