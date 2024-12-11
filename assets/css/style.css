@@ -20,10 +20,14 @@
 
 
 /* témoignages */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* titre et nav poppins
+texte courant Open Sans */
 .temoignage {
     background-color: #E7C79B;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 5px;
+    
 }
 .temoignage h2{
     display: flex;
@@ -31,17 +35,20 @@
     color: #f7f4e9;
 }
 /* mise en page des commantaires */
+.commantaire{
+    color: #2F2F2F;
+}
 .commentaire div{
     background-color: #f7f4e9;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .commentaire div div{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -73,4 +80,73 @@ h3 {
 #date{
     font-size: small;
 }
+@media screen and (min-width: 1024px){
+    .commantaire div{
+        flex-direction: row;
+      
+    }
+    .commentaire div div{
+        width: 95%;
+    }
+}
 /* footer */
+footer{
+    background-color: #709791;
+    color: #F7F4E9;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #F7F4E9;
+}
+/* placement réseaux */
+#reseau {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+#image{
+    display: flex;
+    flex-direction: column;
+}
+#image p{
+    display: flex;
+    align-items: center;
+    
+}
+/* taille logo réseaux sociaux */
+#insta{
+    width: 40px;
+}
+#facebook{
+    width: 30px;
+}
+@media screen and (min-width: 1024px){
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #left {
+        display: flex;
+        flex-direction: column;
+    }
+    #right {
+        display: flex;
+        flex-direction: column;
+    }
+    #credit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
