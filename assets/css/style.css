@@ -52,6 +52,7 @@ header {
 
 .nav-bar .icon img {
     height: 40px; /* Permet de paramètrer la taille des icones */
+    width: 40px;
     cursor: pointer;
 }
 
