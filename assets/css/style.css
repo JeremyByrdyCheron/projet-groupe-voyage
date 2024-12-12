@@ -456,7 +456,7 @@ texte courant Open Sans */
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .commentaire div div {
   width: 100%;
@@ -466,7 +466,7 @@ texte courant Open Sans */
 
 .commentaire h3 {
   display: flex;
-  justify-content: space-between ;
+
   flex-wrap: wrap;
   color: #000000;
 }
@@ -477,7 +477,8 @@ texte courant Open Sans */
 
 .commentaire div h3{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -519,8 +520,7 @@ footer {
   color: #f7f4e9;
   border-radius: 20px;
   margin-top: 50px;
-  padding: 20px;
-  margin: auto;
+  margin: -5px;
 }
 
 footer h2 {
