@@ -52,56 +52,7 @@
         <button id="next" class="nav-btn">›</button>
       </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer>
 
-  </footer>
-  <script>
-// Ce paramètre permet de récupérer les éléments qui sont nécessaires
-const carousel = document.querySelector('.carousel'); // C'est un conteneur pour les images
-const images = document.querySelectorAll('.carousel img'); // Cela correspond à la liste des images
-const prevBtn = document.getElementById('prev'); // le bouton précédent
-const nextBtn = document.getElementById('next'); // le bouton suivant
-
-// Cela permet de définir l'index actuel pour suivre l'image visible
-let currentIndex = 0;
-
-// Cette fonction permet de mettre à jour la position du carrousel.
-function updateCarousel() {
-    // Permet de calculer la largeur d'une image de manière automatique
-    const imageWidth = images[0].offsetWidth; // Cela permet d'assurer une largeur correcte même si le CSS change.
-    // Ici, cela calcule le décalage (translateX)
-    const offset = -currentIndex * imageWidth;
-    // Ce paramètre permet d'appliquer le décalage d'image
-    carousel.style.transform = `translateX(${offset}px)`;
-
-}
-
-// Ici, cela permet d'ajouter les événements pour les boutons
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length; // Ce paramètre permet de passer à l'image suivante
-    updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length; // Permet de revenir sur l'image précédente
-    updateCarousel();
-});
-
-//Permet d'initialiser l'affichage au chargement
-updateCarousel();
-  </script>
-
-  </header>
-  <nav>
-
-  </nav>
-  <main>
-    <section></section>
     <section>
       <div class="devis">
         <br>
@@ -194,6 +145,39 @@ updateCarousel();
   <footer>
 
   </footer>
-</body>
+  <script>
+// Ce paramètre permet de récupérer les éléments qui sont nécessaires
+const carousel = document.querySelector('.carousel'); // C'est un conteneur pour les images
+const images = document.querySelectorAll('.carousel img'); // Cela correspond à la liste des images
+const prevBtn = document.getElementById('prev'); // le bouton précédent
+const nextBtn = document.getElementById('next'); // le bouton suivant
 
-</html>
+// Cela permet de définir l'index actuel pour suivre l'image visible
+let currentIndex = 0;
+
+// Cette fonction permet de mettre à jour la position du carrousel.
+function updateCarousel() {
+    // Permet de calculer la largeur d'une image de manière automatique
+    const imageWidth = images[0].offsetWidth; // Cela permet d'assurer une largeur correcte même si le CSS change.
+    // Ici, cela calcule le décalage (translateX)
+    const offset = -currentIndex * imageWidth;
+    // Ce paramètre permet d'appliquer le décalage d'image
+    carousel.style.transform = `translateX(${offset}px)`;
+
+}
+
+// Ici, cela permet d'ajouter les événements pour les boutons
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length; // Ce paramètre permet de passer à l'image suivante
+    updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // Permet de revenir sur l'image précédente
+    updateCarousel();
+});
+
+//Permet d'initialiser l'affichage au chargement
+updateCarousel();
+  </script>
+

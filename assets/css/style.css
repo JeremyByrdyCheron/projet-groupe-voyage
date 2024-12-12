@@ -1,3 +1,12 @@
+/* pour toute la page, mets une couleur de fond, et retire les marges internes et externes de toute la page */
+
+* {
+  color: #f7f4e9;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 0px;
+}
+
 /* header */
 /* Permet de faire un reset des données de margin et padding */
 * {
@@ -70,7 +79,6 @@ header {
 }
 
 /* barre de nav */
-
 /* Partie accueil */
 #accueil {
     text-align: center;
@@ -130,8 +138,9 @@ header {
 }
 
 
-/* devis */
 
+
+/* devis */
 * {
   margin: 0;
 }
@@ -140,7 +149,7 @@ header {
   color: #f7f4e9;
 }
 span {
-  color: rgb(140, 0, 0);
+  color: #8c0000;
   margin-left: 2vh;
 }
 
@@ -290,6 +299,112 @@ input #budget {
 
 /* destinations phares */
 
+.card {
+  border: 10px solid #cccccc; /* Ajoute une bordure autour de chaque projet */
+  padding: 10px; /* Un peu d'espace autour de chaque projet */
+  box-sizing: border-box;
+}
+
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4, 35%); /* Crée une grille avec 4 colonnes */
+  gap: 10px; /* Ajoute un espace de 10px entre les cards */
+}
+
+/* crée les cards, avec une couleur de fond, en colonne avec les éléments centrés et une marge interne de 10 pixels */
+
+#topDestinations {
+  background-color: #e7c79b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+#topDestinations img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+/* définit les règles css du bouton : une marge interne de 10px, pas de bordure visible, une bordure arrondie, une couelur de fond, et une marge externe automatique  */
+#topDestinations button {
+  padding: 10px;
+  border: none;
+  border-radius: 90px;
+  background-color: #709791;
+  display: flex;
+  margin: auto;
+}
+/* centre le titres des destinations*/
+#topDestinations h3 {
+  display: flex;
+  justify-content: center;
+}
+/* centre les descriptions des destinations et leur met une marge interne de 10px */
+#topDestinations p {
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Les images prendront toute la largeur de leur conteneur */
+
+/* définit la taille des images à 10% de leur taille originelle. Sans ça, la couleur de fond ne s'étend pas sur toute la page */
+.card img {
+  height: 10%;
+}
+
+/* définit la durée totale du défilement et le nombre de fois que le carroussel va se répéter */
+.card {
+  float: left;
+  animation: glissement 60s infinite;
+}
+
+/* à x% du temps, le carroussel se déplace à y% du carroussel, ce qui permet de faire un défilement. C'est l'équivalent de créer une fonction en JavaScript ou en Python */
+
+@keyframes glissement {
+  0% {
+    transform: translateX(40%);
+  }
+  20% {
+    transform: translateX(40%);
+  }
+  25% {
+    transform: translateX(-36%);
+  }
+  45% {
+    transform: translateX(-36%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-150%);
+  }
+  95% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  /* Les images prendront toute la largeur de leur conteneur */
+  .card img {
+    width: 100%;
+    height: auto; /* Pour garder les proportions de l'image */
+    display: flex;
+  }
+
+}
 /* galerie photo */
 
 /* témoignages */
