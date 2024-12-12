@@ -1,149 +1,212 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>projet groupe</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>projet groupe</title>
-</head>
-
-<body>
-  <header>
-    <nav class="nav-bar">
-      <!-- Dans cette partie, il y a toutes les images de la barre de navigation -->
-      <div class="icon">
-        <img src="assets/img/icone_dossier.png" alt="icone de dossier">
-      </div>
-      <div class="icon">
-        <img src="assets/img/icone_photo.png" alt="icone de photo">
-      </div>
-      <div class="icon">
-        <img src="assets/img/icone_localisation.png" alt="icone de localisation">
-      </div>
-      <div class="icon">
-        <img src="assets/img/icone_mail.png" alt="icone de mail">
-      </div>
-      <div class="icon">
-        <img src="assets/img/icone_groupe.png" alt="icone de groupe">
-      </div>
-      <div class="logo">
-        <img src="assets/img/Logo_e_d.png" alt="logo de l'agence de voyage">
-      </div>
-    </nav>
-  </header>
-  <nav>
-  </nav>
-  <main>
-    <!-- Cette section représente la partie accueil -->
-    <section id="accueil">
-      <h1>Envie de passer vos vacances dans des paysages de rêves ?</h1>
-      <h2>Vous avez frappé à la bonne porte !</h2>
-      <div id="car_images">
-        <button id="prev" class="nav-btn">‹</button>
-        <div class="carousel">
-          <!-- Pour chacune des images, on doit rechercher dans le dossier assets et ensuite écrire une description si l'image ne s'affiche pas ou pour les personnes malvoyantes. -->
-          <img id="lagon" src="assets/img/lagon.png" alt="paysage de lagon">
-          <img id="autriche" src="assets/img/randonneeAutriche.png" alt="paysage de l'Autriche">
-          <img id="falaise" src="assets/img/falaise.png" alt="Image de falaises">
-          <img id="oasis" src="assets/img/oasis.png" alt="Image de paysage d'oasis">
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <!-- Dans cette partie, il y a toutes les images de la barre de navigation -->
+        <div class="icon">
+          <img src="assets/img/icone_dossier.png" alt="icone de dossier" />
         </div>
-        <!--Cette partie correspond aux flèches pour changer les images du carrousel.-->
-        <button id="next" class="nav-btn">›</button>
-      </div>
-    </section>
-
-    <section>
-      <div class="devis">
-        <br>
-        <img src="assets/Ressources-etudiant/Fichier 1.png" alt="Logo-evasion-et-découvertes">
-        <br>
-        <h2 id="devis">C'est parti pour le devis !</h2>
-        <br>
-        <form action="" method="get" class="formulaire-devis">
-          <div class="devis-entier">
-            <div class="gauche">
-              <div class="formulaire-devis">
-                <label for="nom">Nom : </label>
-                <br>
-                <input type="text" placeholder="Ex : Doe" name="nom" id="nom" required />
-                <span class="error-message"></span>
-              </div>
-              <br>
-              <div class="formulaire-devis">
-                <label for="prenom">Prénom : </label>
-                <br>
-                <input type="text" placeholder="Ex : John" name="prenom" id="prenom" required />
-                <span class="error-message"></span>
-              </div>
-              <br>
-              <div class="formulaire-devis">
-                <label for="mail">E-mail : </label>
-                <br>
-                <input type="email" placeholder="Ex : nom.prenom@mail.com" name="mail" id="mail" size="25" required />
-                <span class="error-message"></span>
-              </div>
-              <br>
-              <div class="formulaire-devis">
-                <label for="destination">Destination : </label>
-                <br>
-                <input type="text" placeholder="Ex : Autriche" name="destination" id="destination" required />
-                <span class="error-message"></span>
-              </div>
-              <br>
-              <div class="formulaire-devis">
-                <label for="activites">Nombre d'activités : </label>
-                <br>
-                <input type="text" placeholder="Ex : 1" name="activites" id="activites" required />
-                <span class="error-message"></span>
-              </div>
-            </div>
-            <br>
-            <br>
-            <div class="droite">
-              <p id="dates">Dates de votre voyage :</p>
-              <ul>
-                <li>
-                  <label for="depart">Départ :</label><br>
-                  <input type="date" id="depart" name="vac-depart" min="2024-12-01" />
-                  <span class="error-message"></span>
-                </li>
-                <br>
-                <li>
-                  <label for="retour">Retour :</label><br>
-                  <input type="date" id="retour" name="vac-retour" min="2024-12-01" />
-                  <span class="error-message"></span>
-                </li>
-                <br>
-                <li>
-                  <div class="formulaire-devis">
-                    <label for="budget">Votre budget : </label>
-                    <br>
-                    <input type="text" placeholder="Ex : 1234" name="budget" id="budgettext" required />
-                    <span class="error-message"></span>
-                  </div>
-                </li>
-              </ul>
-              <br>
-            </div>
+        <div class="icon">
+          <img src="assets/img/icone_photo.png" alt="icone de photo" />
+        </div>
+        <div class="icon">
+          <img
+            src="assets/img/icone_localisation.png"
+            alt="icone de localisation"
+          />
+        </div>
+        <div class="icon">
+          <img src="assets/img/icone_mail.png" alt="icone de mail" />
+        </div>
+        <div class="icon">
+          <img src="assets/img/icone_groupe.png" alt="icone de groupe" />
+        </div>
+        <div class="logo">
+          <img src="assets/img/Logo_e_d.png" alt="logo de l'agence de voyage" />
+        </div>
+      </nav>
+    </header>
+    <nav></nav>
+    <main>
+      <!-- Cette section représente la partie accueil -->
+      <section id="accueil">
+        <h1>Envie de passer vos vacances dans des paysages de rêves ?</h1>
+        <h2>Vous avez frappé à la bonne porte !</h2>
+        <div id="car_images">
+          <button id="prev" class="nav-btn">‹</button>
+          <div class="carousel">
+            <!-- Pour chacune des images, on doit rechercher dans le dossier assets et ensuite écrire une description si l'image ne s'affiche pas ou pour les personnes malvoyantes. -->
+            <img id="lagon" src="assets/img/lagon.png" alt="paysage de lagon" />
+            <img
+              id="autriche"
+              src="assets/img/randonneeAutriche.png"
+              alt="paysage de l'Autriche"
+            />
+            <img
+              id="falaise"
+              src="assets/img/falaise.png"
+              alt="Image de falaises"
+            />
+            <img
+              id="oasis"
+              src="assets/img/oasis.png"
+              alt="Image de paysage d'oasis"
+            />
           </div>
-        </form>
-        <span id="prix">Prix estimé :</span>
-        <br>
-        <div class="bouton">
-          <button id="confirm">Confirmer</button>
+          <!--Cette partie correspond aux flèches pour changer les images du carrousel.-->
+          <button id="next" class="nav-btn">›</button>
         </div>
-        <br>
-        <br>
-      </div>
-      <script src="assets/JavaScript/script.js"></script>
-    </section>
+      </section>
+
+      <section>
+        <div class="devis">
+          <br />
+          <img
+            src="assets/Ressources-etudiant/Fichier 1.png"
+            alt="Logo-evasion-et-découvertes"
+          />
+          <br />
+          <h2 id="devis">C'est parti pour le devis !</h2>
+          <br />
+          <form action="" method="get" class="formulaire-devis">
+            <div class="devis-entier">
+              <div class="gauche">
+                <div class="formulaire-devis">
+                  <label for="nom">Nom : </label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Ex : Doe"
+                    name="nom"
+                    id="nom"
+                    required
+                  />
+                  <span class="error-message"></span>
+                </div>
+                <br />
+                <div class="formulaire-devis">
+                  <label for="prenom">Prénom : </label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Ex : John"
+                    name="prenom"
+                    id="prenom"
+                    required
+                  />
+                  <span class="error-message"></span>
+                </div>
+                <br />
+                <div class="formulaire-devis">
+                  <label for="mail">E-mail : </label>
+                  <br />
+                  <input
+                    type="email"
+                    placeholder="Ex : nom.prenom@mail.com"
+                    name="mail"
+                    id="mail"
+                    size="25"
+                    required
+                  />
+                  <span class="error-message"></span>
+                </div>
+                <br />
+                <div class="formulaire-devis">
+                  <label for="destination">Destination : </label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Ex : Autriche"
+                    name="destination"
+                    id="destination"
+                    required
+                  />
+                  <span class="error-message"></span>
+                </div>
+                <br />
+                <div class="formulaire-devis">
+                  <label for="activites">Nombre d'activités : </label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Ex : 1"
+                    name="activites"
+                    id="activites"
+                    required
+                  />
+                  <span class="error-message"></span>
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="droite">
+                <p id="dates">Dates de votre voyage :</p>
+                <ul>
+                  <li>
+                    <label for="depart">Départ :</label><br />
+                    <input
+                      type="date"
+                      id="depart"
+                      name="vac-depart"
+                      min="2024-12-01"
+                    />
+                    <span class="error-message"></span>
+                  </li>
+                  <br />
+                  <li>
+                    <label for="retour">Retour :</label><br />
+                    <input
+                      type="date"
+                      id="retour"
+                      name="vac-retour"
+                      min="2024-12-01"
+                    />
+                    <span class="error-message"></span>
+                  </li>
+                  <br />
+                  <li>
+                    <div class="formulaire-devis">
+                      <label for="budget">Votre budget : </label>
+                      <br />
+                      <input
+                        type="text"
+                        placeholder="Ex : 1234"
+                        name="budget"
+                        id="budgettext"
+                        required
+                      />
+                      <span class="error-message"></span>
+                    </div>
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </form>
+          <span id="prix">Prix estimé :</span>
+          <br />
+          <div class="bouton">
+            <button id="confirm">Confirmer</button>
+          </div>
+          <br />
+          <br />
+        </div>
+        <script src="assets/JavaScript/script.js"></script>
+      </section>
       <!-- crée la section des destinations phares -->
       <section id="topDestinations">
         <h2>Nos destinations phares</h2>
         <!-- crée le conteneur des destinations phares -->
         <div id="cards">
-        <!-- crée un modèle de card qui comptera à chaque fois d'abord l'image puis le titre et enfin un petit texte acrocheur et un bouton pour en savoir plus -->
+          <!-- crée un modèle de card qui comptera à chaque fois d'abord l'image puis le titre et enfin un petit texte acrocheur et un bouton pour en savoir plus -->
           <!-- randonnée en autriche -->
           <div class="card">
             <img
@@ -203,45 +266,220 @@
           </div>
         </div>
       </section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer>
+      <section class="galerie">
+        <h2>Notre galerie photos</h2>
+        <div class="photo">
+          <img src="assets/img/paysage1.png" alt="" />
+          <img src="assets/img/paysage2.png" alt="" />
+          <img src="assets/img/paysage3.png" alt="" />
+          <img src="assets/img/paysage4.png" alt="" />
+        </div>
+      </section>
+      <section class="temoignage">
+        <h2>Témoignages de nos clients</h2>
+        <div class="commentaire">
+          <div>
+            <img
+              id="profil"
+              src="assets/img/clara.jpg"
+              alt="profil utilisateur"
+            />
+            <div>
+              <h3>
+                Clara [Espagne]<img
+                  id="five_star"
+                  src="assets/img/five-star.svg"
+                  alt="cinq étoiles"
+                />
+              </h3>
+              <p id="date">du 14 février au 21 février 2024</p>
+              <p>Excellente agence, je recommande!</p>
+            </div>
+          </div>
+          <div>
+            <img
+              id="profil"
+              src="assets/img/mathis.jpg"
+              alt="profil utilisateur"
+            />
+            <div>
+              <!-- il faut le prénom du clients/ sa note(avec des étoiles)/son commentaire -->
+              <h3>
+                Mathis [Autriche]<img
+                  id="four_star"
+                  src="assets/img/four_star.svg"
+                  alt="quatre étoile"
+                />
+              </h3>
+              <p id="date">du 28 avril au 12 mai 2024</p>
+              <p>
+                Avec des amis, nous avons choisi de partir en vacances avec
+                l’agence évasion & découvertes. Nous avons découvert l’Autriche
+                et ses paysages magnifiques. Nous recommandons vivement cette
+                agence de voyages !
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              id="profil"
+              src="assets/img/federic.jpg"
+              alt="profil utilisateur"
+            />
+            <div>
+              <!-- il faut le prénom du clients/ sa note(avec des étoiles)/son commentaire -->
+              <h3>
+                Frédéric [Etats-Unis]
+                <img
+                  id="five_star"
+                  src="assets/img/five-star.svg"
+                  alt="cinq étoiles"
+                />
+              </h3>
+              <p id="date">du 28 avril au 12 mai 2024</p>
+              <p>
+                Pour mes 30 ans, mon entourage m’a offert un voyage aux
+                Etats-Unis. J’ai été ébloui par la grandeur des villes comme New
+                York ou encore Washington. Je recommande la destination mais
+                également l’agence de voyage !
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              id="profil"
+              src="assets/img/amandine.jpg"
+              alt="profil utilisateur"
+            />
+            <div>
+              <!-- il faut le prénom du clients/ sa note(avec des étoiles)/son commentaire -->
+              <h3>
+                Amandine [Japon]
+                <img
+                  id="five_star"
+                  src="assets/img/five-star.svg"
+                  alt="cinq étoiles"
+                />
+              </h3>
+              <p id="date">du 24 juillet au 30 août 2024</p>
+              <p>
+                Je fais partie d’une petite entreprise et j’ai du organiser un
+                séminaire à l’étranger. J’ai découvert cette agence via une pub
+                sur internet et je suis très satisfaite de la qualité de vos
+                services !
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              id="profil"
+              src="assets/img/antoine.jpg"
+              alt="profil utilisateur"
+            />
+            <div>
+              <!-- il faut le prénom du clients/ sa note(avec des étoiles)/son commentaire -->
+              <h3>
+                Antoine [Pérou]
+                <img
+                  id="four_star"
+                  src="assets/img/four_star.svg"
+                  alt="quatre étoiles"
+                />
+              </h3>
+              <p id="date">du 4 janvier au 12 février 2024</p>
+              <p>
+                Des amis m’ont parlés de l’agence de voyage évasion et
+                découvertes. Etant un grand adepte de l’aventure,le nom m’a tout
+                de suite parlé. Je me suis donc laissé tenté et le resultat est
+                bien au rendez-vous ! :)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>Nous Contacter</h2>
+      <div class="footer">
+        <div id="left">
+          <p>
+            Horaire : <br />
+            du lundi au vendredi de 9h à 18h <br />
+            du samedi et dimanche de 9h à 12h
+          </p>
+          <p>
+            Adresse e-mail: <br /><a href="mailto:evasion&decouverte@gmail.com"
+              >evasion&decouverte@gmail.com</a
+            >
+          </p>
+          <p>Téléphone : <br /><a href="tel:0300000000">0300000000</a></p>
+        </div>
+        <div id="right">
+          <p>
+            Adresse : <br />31 Rue Irene Joliot Curie, 60610 La Croix-Saint-Ouen
+          </p>
+          <div id="reseau">
+            <p>Nos réseaux sociaux :</p>
+            <div id="image">
+              <p>
+                <img
+                  id="facebook"
+                  src="assets/img/facebook.webp"
+                  alt="logo facebook"
+                />
+                : Evasion&Découvertes
+              </p>
+              <p>
+                <img id="insta" src="assets/img/insta.png" alt="logo insta" />:
+                Evasion&Découvertes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="credit">
+        <p>Crédits et mention légales:</p>
+        <ul>
+          <li>Conditions générales d'utilisation (CGU)</li>
+          <li>Horizon Clara</li>
+          <li>Traitement des données conformement au RGPD</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="assets/js/script_galerie.js"></script>
+    <script>
+      // Ce paramètre permet de récupérer les éléments qui sont nécessaires
+      const carousel = document.querySelector(".carousel"); // C'est un conteneur pour les images
+      const images = document.querySelectorAll(".carousel img"); // Cela correspond à la liste des images
+      const prevBtn = document.getElementById("prev"); // le bouton précédent
+      const nextBtn = document.getElementById("next"); // le bouton suivant
 
-  </footer>
-  <script>
-// Ce paramètre permet de récupérer les éléments qui sont nécessaires
-const carousel = document.querySelector('.carousel'); // C'est un conteneur pour les images
-const images = document.querySelectorAll('.carousel img'); // Cela correspond à la liste des images
-const prevBtn = document.getElementById('prev'); // le bouton précédent
-const nextBtn = document.getElementById('next'); // le bouton suivant
+      // Cela permet de définir l'index actuel pour suivre l'image visible
+      let currentIndex = 0;
 
-// Cela permet de définir l'index actuel pour suivre l'image visible
-let currentIndex = 0;
+      // Cette fonction permet de mettre à jour la position du carrousel.
+      function updateCarousel() {
+        // Permet de calculer la largeur d'une image de manière automatique
+        const imageWidth = images[0].offsetWidth; // Cela permet d'assurer une largeur correcte même si le CSS change.
+        // Ici, cela calcule le décalage (translateX)
+        const offset = -currentIndex * imageWidth;
+        // Ce paramètre permet d'appliquer le décalage d'image
+        carousel.style.transform = `translateX(${offset}px)`;
+      }
 
-// Cette fonction permet de mettre à jour la position du carrousel.
-function updateCarousel() {
-    // Permet de calculer la largeur d'une image de manière automatique
-    const imageWidth = images[0].offsetWidth; // Cela permet d'assurer une largeur correcte même si le CSS change.
-    // Ici, cela calcule le décalage (translateX)
-    const offset = -currentIndex * imageWidth;
-    // Ce paramètre permet d'appliquer le décalage d'image
-    carousel.style.transform = `translateX(${offset}px)`;
+      // Ici, cela permet d'ajouter les événements pour les boutons
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length; // Ce paramètre permet de passer à l'image suivante
+        updateCarousel();
+      });
 
-}
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length; // Permet de revenir sur l'image précédente
+        updateCarousel();
+      });
 
-// Ici, cela permet d'ajouter les événements pour les boutons
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length; // Ce paramètre permet de passer à l'image suivante
-    updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length; // Permet de revenir sur l'image précédente
-    updateCarousel();
-});
-
-//Permet d'initialiser l'affichage au chargement
-updateCarousel();
-  </script>
-
+      //Permet d'initialiser l'affichage au chargement
+      updateCarousel();
+    </script>
+  </body>
+</html>

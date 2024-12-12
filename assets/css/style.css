@@ -452,19 +452,21 @@ texte courant Open Sans */
     border-radius: 20px;
     padding: 5px;
     margin-top: 50px;
+    flex-direction: column;
     
 }
 .temoignage h2{
     display: flex;
     justify-content: center;
-    color: #f7f4e9;
+    
+
 }
 /* mise en page des commantaires */
 .commantaire{
     color: #2F2F2F;
 }
 .commentaire div{
-    background-color: #f7f4e9;
+    background-color: #F7F4E9;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -473,16 +475,26 @@ texte courant Open Sans */
 
 }
 .commentaire div div{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-h3 {
+.commentaire h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.commentaire p{
+  color: #000000;
+}
+
+.commentaire h3{
+  color: #000000;
+}
+
+
 /* taille image */
 #four_star{
 
@@ -504,6 +516,9 @@ h3 {
 /* taille police des dates */
 #date{
     font-size: small;
+}.temoignage{
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px){
     .commantaire div{
