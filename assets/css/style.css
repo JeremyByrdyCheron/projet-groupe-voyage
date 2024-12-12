@@ -71,7 +71,6 @@ header {
 
 /* barre de nav */
 
-
 /* Partie accueil */
 #accueil {
     text-align: center;
@@ -133,18 +132,166 @@ header {
 
 /* devis */
 
+* {
+  margin: 0;
+}
+
+#prix {
+  color: #f7f4e9;
+}
+span {
+  color: rgb(140, 0, 0);
+  margin-left: 2vh;
+}
+
+button {
+  background-color: #e7c79b;
+}
+
+.formulaire-devis {
+  display: flex;
+  flex-direction: column;
+}
+
+.devis {
+  background-color: rgba(112, 151, 145, 1);
+  border-radius: 5%;
+  border: black;
+  border-width: 18px;
+}
+
+img {
+  display: flex;
+  margin: auto;
+  width: 178px;
+  height: 58px;
+}
+
+#devis {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(247, 244, 233, 1);
+}
+
+label {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f7f4e9;
+  margin-left: 2vh;
+}
+
+#dates {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(247, 244, 233, 1);
+  text-align: left;
+  margin-left: 2vh;
+}
+
+#budget {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(247, 244, 233, 1);
+  text-align: left;
+  margin-left: 2vh;
+}
+
+#confirm {
+  margin-left: 2vh;
+  border-radius: 20%;
+}
+
+li {
+  color: rgba(247, 244, 233, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: solid;
+  border-color: white;
+  border-radius: 5px;
+  margin-left: 2vh;
+  background-color: #e7c79b;
+  color: black;
+  max-width: 140px;
+}
+
+#mail {
+  max-width: 170px;
+}
+
+#depart,
+#retour {
+  max-width: 105px;
+}
+
+input #budget {
+  color: black;
+}
+.input-error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+@media (min-width: 1024px) {
+  img {
+    display: flex;
+    margin: auto;
+  }
+  #devis {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 2vh;
+  }
+  label {
+    font-size: 35px;
+    margin-left: 4vh;
+  }
+  input {
+    margin-left: 4vh;
+  }
+  .droite {
+    margin-top: -4%;
+  }
+  li {
+    margin-top: 10%;
+  }
+  #dates {
+    font-size: 36px;
+    margin-left: 4vh;
+  }
+  .formulaire-devis {
+    display: flex;
+  }
+  .devis-entier {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button {
+    background-color: #e7c79b;
+    font-size: 25px;
+  }
+
+  .bouton {
+    display: flex;
+    justify-content: center;
+  }
+
+  #prix {
+    display: flex;
+    color: #f7f4e9;
+    font-size: 20px;
+    justify-content: center;
+  }
+}
 
 /* destinations phares */
 
-
-
-
 /* galerie photo */
 
-
-
 /* témoignages */
-
-
 
 /* footer */
