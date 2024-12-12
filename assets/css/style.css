@@ -10,136 +10,130 @@
 /* header */
 /* Permet de faire un reset des données de margin et padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Cette section permet de créer le style du header. */
 header {
-    background-color: #E8C9A3; /* Change la couleur de fond du header en beige. */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Permet de créer une ombre sous le header. */
-    padding: 15px 0;
-    border-bottom-left-radius: 20px; /*Cela permet de placer un angle arrondi en bas à gauche.*/
-    border-bottom-right-radius: 20px ; /*Cela permet de placer un angle arrondi en bas à droite.*/
-    border-width: 50px;
-    border: solid 3px; /*Cette partie permet de rendre la bordure affichable avec une valeur de 3 pixels.*/
-    border-color: white ;
-    
+  background-color: #e8c9a3; /* Change la couleur de fond du header en beige. */
+  box-shadow: 0 4px 6px #00000033; /* Permet de créer une ombre sous le header. */
+  padding: 15px 0;
+  border-bottom-left-radius: 20px; /*Cela permet de placer un angle arrondi en bas à gauche.*/
+  border-bottom-right-radius: 20px; /*Cela permet de placer un angle arrondi en bas à droite.*/
+  border-width: 50px;
+  border: solid 3px; /*Cette partie permet de rendre la bordure affichable avec une valeur de 3 pixels.*/
+  border-color: white;
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-around; /*Ce paramètre permet d'aligner les éléments sur l'axe horizontale avec le même espace entre chaque*/
-    align-items: center; 
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around; /*Ce paramètre permet d'aligner les éléments sur l'axe horizontale avec le même espace entre chaque*/
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Cette section permet de créer le style des icones */
 .nav-bar .icon {
-    /* Permet de faire en sorte que les éléments soient modulables. */
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border: 2px solid #FFF; /* Bordure blanche autour de l'image */
-    border-radius: 10px; /* Permet de créer des coins arrondis */
+  /* Permet de faire en sorte que les éléments soient modulables. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px solid #ffffff; /* Bordure blanche autour de l'image */
+  border-radius: 10px; /* Permet de créer des coins arrondis */
 }
 
 .nav-bar .icon img {
-    height: 40px; /* Permet de paramètrer la taille des icones */
-    width: 40px;
-    cursor: pointer;
+  height: 30px; /* Permet de paramètrer la taille des icones */
+  width: 30px;
+  cursor: pointer;
 }
 
 /* Effet de survol quand on passe la souris par dessus l'élément*/
 .nav-bar .icon:hover {
-    transform: scale(1.1); /* Zoom au survol */
+  transform: scale(1.1); /* Zoom au survol */
 }
 
 /* Dans cette partie on modifie le style du logo */
 .nav-bar .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espace entre l'image et le texte */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre l'image et le texte */
 }
 
 .nav-bar .logo img {
-    height: 50px;
+  height: 50px;
 }
 
 .nav-bar .logo span {
-    font-size: 16px;
-    /* permet de mettre la police en gras */
-    font-weight: bold;
-    color: #fff;
+  font-size: 16px;
+  /* permet de mettre la police en gras */
+  font-weight: bold;
+  color: #fff;
 }
 
 /* barre de nav */
 /* Partie accueil */
 #accueil {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
-
-
 #car_images {
-/* Ce paramètre permet de le positionner les flèches correctement sur l'image */
-    position: relative; 
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
-    /* Cela va permettre de cacher le surplus d'image */
-    overflow: hidden;
-    border-radius: 10px;
+  /* Ce paramètre permet de le positionner les flèches correctement sur l'image */
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  /* Cela va permettre de cacher le surplus d'image */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Cette partie consiste au fait de paramètrer la taille des images. */
 .carousel img {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .nav-btn {
-    position: absolute;
-    top: 50%;
-    /* Permet de se déplacer de -50% sur l'axe Y */
-    transform: translateY(-50%); 
-    color: white;
-    border: none;
-    font-size: 2em;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-    /* Plus le z-index est élevé plus l'image sera positionnée au dessus des autres. */
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  /* Permet de se déplacer de -50% sur l'axe Y */
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  /* Plus le z-index est élevé plus l'image sera positionnée au dessus des autres. */
+  border-radius: 50%;
 }
 /* Cette partie sert à paramètrer la flèche "de retour" */
-#prev { 
-    background: none;
-    left: 10px;
-    color: #E8C9A3;
+#prev {
+  background: none;
+  left: 10px;
+  color: #e8c9a3;
 }
 /* Cette partie sert à paramètrer la flèche "d'après" */
 #next {
-    background:none;
-    right: 10px;
-    color: #E8C9A3;
+  background: none;
+  right: 10px;
+  color: #e8c9a3;
 }
-
-
-
 
 /* devis */
 * {
@@ -306,7 +300,6 @@ input #budget {
   box-sizing: border-box;
 }
 
-
 #cards {
   display: grid;
   grid-template-columns: repeat(4, 35%); /* Crée une grille avec 4 colonnes */
@@ -322,8 +315,6 @@ input #budget {
   align-items: center;
   padding: 10px;
 }
-
-
 
 #topDestinations img {
   width: 100%;
@@ -397,198 +388,200 @@ input #budget {
 }
 
 @media screen and (min-width: 1025px) {
-
   /* Les images prendront toute la largeur de leur conteneur */
   .card img {
     width: 100%;
     height: auto; /* Pour garder les proportions de l'image */
     display: flex;
   }
-
 }
 /* galerie photo */
 .galerie {
-    background-color: #709791;
-    border-radius: 20px;
-    padding: 20px 0px;
+  background-color: #709791;
+  border-radius: 20px;
+  padding: 20px 0px;
 }
-.galerie h2{
-    color: #f7f4e9;
-    display: flex;
-    justify-content: center;
-    
+.galerie h2 {
+  color: #f7f4e9;
+  display: flex;
+  justify-content: center;
 }
 /* grid des photo immersive */
-.photo{
-    display: grid;
-    gap: 5px;
-    height: 60vh;
-    justify-content: center;
-    margin: 50px 0px;
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.photo {
+  display: grid;
+  gap: 5px;
+  height: 60vh;
+  justify-content: center;
+  margin: 50px 0px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
-.photo img{
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.photo img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* version ordinateur */
-@media screen and (min-width: 1024px){
-    .photo {
-        height: 50%;
-        margin: 100px 0px;
-        padding: 50px;
-    }
+@media screen and (min-width: 1024px) {
+  .photo {
+    height: 50%;
+    margin: 100px 0px;
+    padding: 50px;
+  }
 }
 /* témoignages */
 
 /* titre et nav poppins
 texte courant Open Sans */
 .temoignage {
-    background-color: #E7C79B;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 50px;
-    flex-direction: column;
-    
+  background-color: #e7c79b;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 50px;
+  flex-direction: column;
 }
-.temoignage h2{
-    display: flex;
-    justify-content: center;
-    
-
+.temoignage h2 {
+  display: flex;
+  justify-content: center;
 }
 /* mise en page des commantaires */
-.commantaire{
-    color: #2F2F2F;
+.commantaire {
+  color: #2f2f2f;
 }
-.commentaire div{
-    background-color: #F7F4E9;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-
+.commentaire div {
+  background-color: #f7f4e9;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.commentaire div div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.commentaire div div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .commentaire h3 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.commentaire p{
+  display: flex;
+  justify-content: space-between ;
+  flex-wrap: wrap;
   color: #000000;
 }
 
-.commentaire h3{
+.commentaire p {
   color: #000000;
+}
+
+.commentaire div h3{
+  display: flex;
+  justify-content: space-around;
 }
 
 
 /* taille image */
-#four_star{
-
-    width: 100px;
+#four_star {
+  width: 100px;
 }
-#five_star{
-
-    width: 100px;
+#five_star {
+  width: 100px;
 }
 
-
-#profil{
-    border-radius: 100%;
-    height: 70px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-}
-/* taille police des dates */
-#date{
-    font-size: small;
-}.temoignage{
+#profil {
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 1024px){
-    .commantaire div{
-        flex-direction: row;
-      
-    }
-    .commentaire div div{
-        width: 95%;
-    }
+/* taille police des dates */
+#date {
+  font-size: small;
+}
+.temoignage {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .commantaire div {
+    flex-direction: row;
+  }
+  .commentaire div div {
+    width: 95%;
+  }
 }
 /* footer */
 
-footer{
-    margin: auto;
-    background-color: #709791;
-    color: #F7F4E9;
-    border-radius: 20px;
-    margin-top: 50px;
-    padding: 20px;
-    
+footer {
+  background-color: #709791;
+  color: #f7f4e9;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  margin: auto;
 }
 
-footer h2{
-    display: flex;
-    justify-content: center;
+footer h2 {
+  display: flex;
+  justify-content: center;
 }
-.footer a{
-    text-decoration: none;
-    color: #F7F4E9;
+.footer a {
+  text-decoration: none;
+  color: #f7f4e9;
 }
 /* placement réseaux */
 #reseau {
-    display: flex;
-    flex-direction: column;
-    
-    
+  display: flex;
+  flex-direction: column;
 }
-#image{
-    display: flex;
-    flex-direction: column;
+#image {
+  display: flex;
+  flex-direction: column;
 }
-#image p{
-    display: flex;
-    align-items: center;
-    
+#image p {
+  display: flex;
+  align-items: center;
 }
 /* taille logo réseaux sociaux */
-#insta{
+#insta {
+  width: 50px;
+  height: 50px;
+}
+#facebook {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .commantaire div {
+    flex-direction: row;
+  }
+  .commentaire div div {
+    width: 95%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #left {
+    display: flex;
+    flex-direction: column;
+  }
+  #right {
+    display: flex;
+    flex-direction: column;
+  }
+  #credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar .icon img {
+    height: 40px; /* Permet de paramètrer la taille des icones */
     width: 40px;
-}
-#facebook{
-    width: 30px;
-}
-@media screen and (min-width: 1024px){
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #left {
-        display: flex;
-        flex-direction: column;
-    }
-    #right {
-        display: flex;
-        flex-direction: column;
-    }
-    #credit{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    cursor: pointer;
+  }
 }
