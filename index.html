@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>projet groupe</title>
-  </head>
-  <body>
-    <header>
 
-    </header>
-    <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>projet groupe</title>
+</head>
 
+<body>
+  <header>
+    <nav class="nav-bar">
+      <!-- Dans cette partie, il y a toutes les images de la barre de navigation -->
+      <div class="icon">
+        <img src="assets/img/icone_dossier.png" alt="icone de dossier">
+      </div>
+      <div class="icon">
+        <img src="assets/img/icone_photo.png" alt="icone de photo">
+      </div>
+      <div class="icon">
+        <img src="assets/img/icone_localisation.png" alt="icone de localisation">
+      </div>
+      <div class="icon">
+        <img src="assets/img/icone_mail.png" alt="icone de mail">
+      </div>
+      <div class="icon">
+        <img src="assets/img/icone_groupe.png" alt="icone de groupe">
+      </div>
+      <div class="logo">
+        <img src="assets/img/Logo_e_d.png" alt="logo de l'agence de voyage">
+      </div>
     </nav>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer>
+  </header>
+  <nav>
+  </nav>
+  <main>
+    <!-- Cette section représente la partie accueil -->
+    <section id="accueil">
+      <h1>Envie de passer vos vacances dans des paysages de rêves ?</h1>
+      <h2>Vous avez frappé à la bonne porte !</h2>
+      <div id="car_images">
+        <button id="prev" class="nav-btn">‹</button>
+        <div class="carousel">
+          <!-- Pour chacune des images, on doit rechercher dans le dossier assets et ensuite écrire une description si l'image ne s'affiche pas ou pour les personnes malvoyantes. -->
+          <img id="lagon" src="assets/img/lagon.png" alt="paysage de lagon">
+          <img id="autriche" src="assets/img/randonneeAutriche.png" alt="paysage de l'Autriche">
+          <img id="falaise" src="assets/img/falaise.png" alt="Image de falaises">
+          <img id="oasis" src="assets/img/oasis.png" alt="Image de paysage d'oasis">
+        </div>
+        <!--Cette partie correspond aux flèches pour changer les images du carrousel.-->
+        <button id="next" class="nav-btn">›</button>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer>
 
-    </footer>
-  </body>
+  </footer>
+  <script>
+// Ce paramètre permet de récupérer les éléments qui sont nécessaires
+const carousel = document.querySelector('.carousel'); // C'est un conteneur pour les images
+const images = document.querySelectorAll('.carousel img'); // Cela correspond à la liste des images
+const prevBtn = document.getElementById('prev'); // le bouton précédent
+const nextBtn = document.getElementById('next'); // le bouton suivant
+
+// Cela permet de définir l'index actuel pour suivre l'image visible
+let currentIndex = 0;
+
+// Cette fonction permet de mettre à jour la position du carrousel.
+function updateCarousel() {
+    // Permet de calculer la largeur d'une image de manière automatique
+    const imageWidth = images[0].offsetWidth; // Cela permet d'assurer une largeur correcte même si le CSS change.
+    // Ici, cela calcule le décalage (translateX)
+    const offset = -currentIndex * imageWidth;
+    // Ce paramètre permet d'appliquer le décalage d'image
+    carousel.style.transform = `translateX(${offset}px)`;
+
+}
+
+// Ici, cela permet d'ajouter les événements pour les boutons
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length; // Ce paramètre permet de passer à l'image suivante
+    updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // Permet de revenir sur l'image précédente
+    updateCarousel();
+});
+
+//Permet d'initialiser l'affichage au chargement
+updateCarousel();
+  </script>
+</body>
+
 </html>
