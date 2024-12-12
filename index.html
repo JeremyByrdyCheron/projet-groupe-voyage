@@ -22,63 +22,83 @@
         <br>
         <img src="assets/Ressources-etudiant/Fichier 1.png" alt="Logo-evasion-et-découvertes">
         <br>
-        <h2>C'est parti pour le devis !</h2>
+        <h2 id="devis">C'est parti pour le devis !</h2>
         <br>
         <form action="" method="get" class="formulaire-devis">
-          <div class="formulaire-devis">
-            <label for="nom">Nom : </label>
+          <div class="devis-entier">
+            <div class="gauche">
+              <div class="formulaire-devis">
+                <label for="nom">Nom : </label>
+                <br>
+                <input type="text" placeholder="Ex : Doe" name="nom" id="nom" required />
+                <span class="error-message"></span>
+              </div>
+              <br>
+              <div class="formulaire-devis">
+                <label for="prenom">Prénom : </label>
+                <br>
+                <input type="text" placeholder="Ex : John" name="prenom" id="prenom" required />
+                <span class="error-message"></span>
+              </div>
+              <br>
+              <div class="formulaire-devis">
+                <label for="mail">E-mail : </label>
+                <br>
+                <input type="email" placeholder="Ex : nom.prenom@mail.com" name="mail" id="mail" size="25" required />
+                <span class="error-message"></span>
+              </div>
+              <br>
+              <div class="formulaire-devis">
+                <label for="destination">Destination : </label>
+                <br>
+                <input type="text" placeholder="Ex : Autriche" name="destination" id="destination" required />
+                <span class="error-message"></span>
+              </div>
+              <br>
+              <div class="formulaire-devis">
+                <label for="activites">Nombre d'activités : </label>
+                <br>
+                <input type="text" placeholder="Ex : 1" name="activites" id="activites" required />
+                <span class="error-message"></span>
+              </div>
+            </div>
             <br>
-            <input type="text" placeholder="Ex : Doe" name="nom" id="nom" required />
+            <br>
+            <div class="droite">
+              <p id="dates">Dates de votre voyage :</p>
+              <ul>
+                <li>
+                  <label for="depart">Départ :</label><br>
+                  <input type="date" id="depart" name="vac-depart" min="2024-12-01" />
+                  <span class="error-message"></span>
+                </li>
+                <br>
+                <li>
+                  <label for="retour">Retour :</label><br>
+                  <input type="date" id="retour" name="vac-retour" min="2024-12-01" />
+                  <span class="error-message"></span>
+                </li>
+                <br>
+                <li>
+                  <div class="formulaire-devis">
+                    <label for="budget">Votre budget : </label>
+                    <br>
+                    <input type="text" placeholder="Ex : 1234" name="budget" id="budgettext" required />
+                    <span class="error-message"></span>
+                  </div>
+                </li>
+              </ul>
+              <br>
+            </div>
           </div>
-          <br>
-          <div class="formulaire-devis">
-            <label for="prenom">Prénom : </label>
-            <br>
-            <input type="text" placeholder="Ex : John" name="prenom" id="prenom" required />
-          </div>
-          <br>
-          <div class="formulaire-devis">
-            <label for="destination">Destination : </label>
-            <br>
-            <input type="text" placeholder="Ex : Autriche" name="destination" id="destination" required />
-          </div>
-          <br>
-          <div class="formulaire-devis">
-            <label for="activites">Nombre d'activités : </label>
-            <br>
-            <input type="text" placeholder="Ex : 1" name="activites" id="activites" required />
-          </div>
-          <br>
-          <br>
-          <p id="dates">Dates de votre voyage :</p>
-          <ul>
-            <li>
-              <label for="depart">Départ :</label><br>
-              <input type="text" id="jourD" placeholder="Ex : 04" required minlength="2" maxlength="2" size="6" />
-              <input type="text" id="moisD" placeholder="Ex : 08" required minlength="2" maxlength="2" size="6" />
-              <input type="text" id="anneeD" placeholder="Ex : 2025" required minlength="4" maxlength="4" size="8" />
-            </li>
-            <br>
-            <li>
-              <label for="retour">Retour :</label><br>
-              <input type="text" id="jourR" placeholder="Ex : 04" required minlength="2" maxlength="2" size="6" />
-              <input type="text" id="moisR" placeholder="Ex : 08" required minlength="2" maxlength="2" size="6" />
-              <input type="text" id="anneeR" placeholder="Ex : 2025" required minlength="4" maxlength="4" size="8" />
-            </li>
-          </ul>
-          <br>
-          <br>
-          <div class="formulaire-devis">
-            <label for="budget">Votre budget : </label>
-            <br>
-            <input type="text" placeholder="Ex : 1234" name="destination" id="destination" required />
-          </div>
-          <br>
         </form>
-        <button id="confirm">Confirmer</button>
+        <span id="prix">Prix estimé :</span>
+        <br>
+        <div class="bouton">
+          <button id="confirm">Confirmer</button>
+        </div>
         <br>
         <br>
-        <p id="prix"></p>
       </div>
       <script src="assets/JavaScript/script.js"></script>
     </section>
