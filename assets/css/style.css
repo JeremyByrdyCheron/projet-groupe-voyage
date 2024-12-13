@@ -83,7 +83,16 @@ header {
 #accueil {
   text-align: center;
   padding: 20px;
+  
 }
+#accueil h1 {
+  color: #709791;
+}
+
+#accueil h2 {
+  color: #709791;;
+}
+
 
 #car_images {
   /* Ce paramètre permet de le positionner les flèches correctement sur l'image */
@@ -400,6 +409,7 @@ input #budget {
   background-color: #709791;
   border-radius: 20px;
   padding: 20px 0px;
+  margin-top: 50px;
 }
 .galerie h2 {
   color: #f7f4e9;
@@ -456,7 +466,7 @@ texte courant Open Sans */
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .commentaire div div {
   width: 100%;
@@ -465,9 +475,6 @@ texte courant Open Sans */
 }
 
 .commentaire h3 {
-  display: flex;
-
-  flex-wrap: wrap;
   color: #000000;
 }
 
@@ -485,9 +492,11 @@ texte courant Open Sans */
 /* taille image */
 #four_star {
   width: 100px;
+  margin-right: 0;
 }
 #five_star {
   width: 100px;
+  margin-right: 0;
 }
 
 #profil {
@@ -507,10 +516,11 @@ texte courant Open Sans */
 }
 @media screen and (min-width: 1024px) {
   .commantaire div {
+    display: flex;
     flex-direction: row;
   }
   .commentaire div div {
-    width: 95%;
+    width: 90%;
   }
 }
 /* footer */
@@ -520,35 +530,49 @@ footer {
   color: #f7f4e9;
   border-radius: 20px;
   margin-top: 50px;
-  margin: -5px;
+  padding: 5%;
+  
 }
 
 footer h2 {
   display: flex;
   justify-content: center;
+  
 }
+.footer{
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
 .footer a {
   text-decoration: none;
   color: #f7f4e9;
 }
+
 /* placement réseaux */
+
 #reseau {
   display: flex;
   flex-direction: column;
 }
+
 #image {
   display: flex;
   flex-direction: column;
 }
+
 #image p {
   display: flex;
   align-items: center;
 }
+
 /* taille logo réseaux sociaux */
+
 #insta {
   width: 50px;
   height: 50px;
 }
+
 #facebook {
   width: 40px;
   height: 40px;
@@ -558,30 +582,37 @@ footer h2 {
   .commantaire div {
     flex-direction: row;
   }
+
   .commentaire div div {
     width: 95%;
   }
+
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   #left {
     display: flex;
     flex-direction: column;
   }
+
   #right {
     display: flex;
     flex-direction: column;
   }
+
   #credit {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .nav-bar .icon img {
     height: 40px; /* Permet de paramètrer la taille des icones */
     width: 40px;
     cursor: pointer;
   }
+
 }
