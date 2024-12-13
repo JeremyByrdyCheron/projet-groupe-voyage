@@ -1,5 +1,6 @@
 /* pour toute la page, mets une couleur de fond, et retire les marges internes et externes de toute la page */
-
+/* importe la police poppins et opensans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   color: #f7f4e9;
   font-weight: bolder;
@@ -7,6 +8,18 @@
   padding: 0px;
 }
 
+h1, h2, h3, label {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+p, li{
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
 /* header */
 /* Permet de faire un reset des données de margin et padding */
 * {
@@ -31,7 +44,7 @@ header {
   display: flex;
   justify-content: space-around; /*Ce paramètre permet d'aligner les éléments sur l'axe horizontale avec le même espace entre chaque*/
   align-items: center;
-  max-width: 1200px;
+  width: 1fr;
   margin: 0 auto;
 }
 
@@ -43,16 +56,20 @@ header {
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   border: 2px solid #ffffff; /* Bordure blanche autour de l'image */
   border-radius: 10px; /* Permet de créer des coins arrondis */
 }
 
 .nav-bar .icon img {
-  height: 30px; /* Permet de paramètrer la taille des icones */
-  width: 30px;
+  height: 20px; /* Permet de paramètrer la taille des icones */
+  width: 20px;
   cursor: pointer;
+}
+
+.logo img{
+  height: 10%;
 }
 
 /* Effet de survol quand on passe la souris par dessus l'élément*/
@@ -85,11 +102,19 @@ header {
   padding: 20px;
 }
 
+#accueil h1 {
+  color: #709791;
+}
+
+#accueil h2 {
+  color : #709791;
+}
+
 #car_images {
   /* Ce paramètre permet de le positionner les flèches correctement sur l'image */
   position: relative;
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
   margin: 0 auto;
   /* Cela va permettre de cacher le surplus d'image */
   overflow: hidden;
@@ -103,8 +128,8 @@ header {
 
 /* Cette partie consiste au fait de paramètrer la taille des images. */
 .carousel img {
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -131,7 +156,7 @@ header {
 /* Cette partie sert à paramètrer la flèche "d'après" */
 #next {
   background: none;
-  right: 10px;
+  right: 95px;
   color: #e8c9a3;
 }
 
@@ -139,17 +164,16 @@ header {
 * {
   margin: 0;
 }
-
+.devis h2, h3{
+  display: flex;
+  justify-content: center;
+}
 #prix {
   color: #f7f4e9;
 }
 span {
   color: #8c0000;
   margin-left: 2vh;
-}
-
-button {
-  background-color: #e7c79b;
 }
 
 .formulaire-devis {
@@ -175,7 +199,7 @@ img {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  color: rgba(247, 244, 233, 1);
+  color: #f7f4e9;
 }
 
 label {
@@ -185,10 +209,10 @@ label {
   margin-left: 2vh;
 }
 
-#dates {
+.dates {
   font-weight: 600;
   font-size: 20px;
-  color: rgba(247, 244, 233, 1);
+  color: #f7f4e9;
   text-align: left;
   margin-left: 2vh;
 }
@@ -196,7 +220,7 @@ label {
 #budget {
   font-weight: 600;
   font-size: 20px;
-  color: rgba(247, 244, 233, 1);
+  color: #f7f4e9;
   text-align: left;
   margin-left: 2vh;
 }
@@ -214,7 +238,7 @@ li {
 
 input {
   border: solid;
-  border-color: white;
+  border-color: #ffffff;
   border-radius: 5px;
   margin-left: 2vh;
   background-color: #e7c79b;
@@ -232,7 +256,7 @@ input {
 }
 
 input #budget {
-  color: black;
+  color: #000000;
 }
 .input-error {
   border: 2px solid red;
@@ -263,7 +287,7 @@ input #budget {
   li {
     margin-top: 10%;
   }
-  #dates {
+  .dates {
     font-size: 36px;
     margin-left: 4vh;
   }
@@ -423,14 +447,7 @@ input #budget {
   height: 100%;
   object-fit: cover;
 }
-/* version ordinateur */
-@media screen and (min-width: 1024px) {
-  .photo {
-    height: 50%;
-    margin: 100px 0px;
-    padding: 50px;
-  }
-}
+
 /* témoignages */
 
 /* titre et nav poppins
@@ -482,14 +499,14 @@ texte courant Open Sans */
 
 
 /* taille image */
-#four_star {
+.four_star {
   width: 100px;
 }
-#five_star {
+.five_star {
   width: 100px;
 }
 
-#profil {
+.profil {
   border-radius: 100%;
   height: 70px;
   width: 70px;
@@ -497,21 +514,14 @@ texte courant Open Sans */
   justify-content: center;
 }
 /* taille police des dates */
-#date {
+.date {
   font-size: small;
 }
 .temoignage {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 1024px) {
-  .commantaire div {
-    flex-direction: row;
-  }
-  .commentaire div div {
-    width: 95%;
-  }
-}
+
 /* footer */
 
 footer {
@@ -584,4 +594,16 @@ footer h2 {
     width: 40px;
     cursor: pointer;
   }
+  .photo {
+    height: 50%;
+    margin: 100px 0px;
+    padding: 50px;
+  }
+  .commantaire div {
+    flex-direction: row;
+  }
+  .commentaire div div {
+    width: 95%;
+  }
 }
+
