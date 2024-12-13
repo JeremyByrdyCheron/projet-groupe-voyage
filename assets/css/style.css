@@ -14,6 +14,11 @@ h1, h2, h3, label {
   font-style: normal;
 }
 
+#accueil h1, h2{
+  color: #709791;
+  font-weight: bold;
+}
+
 p, li{
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
@@ -164,6 +169,7 @@ header {
   color: #f7f4e9;
 }
 span {
+  font-weight: bold;
   color: #8c0000;
   margin-left: 2vh;
 }
@@ -255,6 +261,10 @@ input #budget {
   background-color: #ffe6e6;
 }
 
+button {
+  background-color: #e7c79b;
+}
+
 @media (min-width: 1024px) {
   img {
     display: flex;
@@ -305,6 +315,9 @@ input #budget {
     color: #f7f4e9;
     font-size: 20px;
     justify-content: center;
+  }
+  .error-message {
+    margin-left: 4vh;
   }
 }
 
