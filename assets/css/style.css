@@ -174,9 +174,9 @@ span {
 }
 
 .devis {
-  background-color: rgba(112, 151, 145, 1);
+  background-color: #709791;
   border-radius: 5%;
-  border: black;
+  border: #000000;
   border-width: 18px;
 }
 
@@ -223,7 +223,7 @@ label {
 }
 
 li {
-  color: rgba(247, 244, 233, 1);
+  color: #f7f4e9;
   display: flex;
   flex-direction: column;
 }
@@ -412,13 +412,13 @@ input #budget {
   }
 }
 /* galerie photo */
-.galerie {
+#galerie {
   background-color: #709791;
   border-radius: 20px;
   padding: 20px 0px;
   margin-top: 50px;
 }
-.galerie h2 {
+#galerie h2 {
   color: #f7f4e9;
   display: flex;
   justify-content: center;
@@ -445,19 +445,19 @@ input #budget {
 
 /* titre et nav poppins
 texte courant Open Sans */
-.temoignage {
+#temoignage {
   background-color: #e7c79b;
   border-radius: 20px;
   padding: 5px;
   margin-top: 50px;
   flex-direction: column;
 }
-.temoignage h2 {
+#temoignage h2 {
   display: flex;
   justify-content: center;
 }
 /* mise en page des commantaires */
-.commantaire {
+.commentaire {
   color: #2f2f2f;
 }
 .commentaire div {

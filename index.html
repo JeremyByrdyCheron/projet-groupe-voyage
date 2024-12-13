@@ -12,22 +12,32 @@
       <nav class="nav-bar">
         <!-- Dans cette partie, il y a toutes les images de la barre de navigation -->
         <div class="icon">
-          <img src="assets/img/icone_dossier.png" alt="icone de dossier" />
+          <a href="#section-devis"> 
+            <img src="assets/img/icone_dossier.png" alt="icone de dossier" />
+        </a>
         </div>
         <div class="icon">
-          <img src="assets/img/icone_photo.png" alt="icone de photo" />
+          <a href="#topDestinations">
+          <img src="assets/img/icone_photo.png" alt="icone de photo"/>
+          </a>
         </div>
         <div class="icon">
+          <a href="#galerie">
           <img
             src="assets/img/icone_localisation.png"
             alt="icone de localisation"
           />
+        </a>
         </div>
         <div class="icon">
+          <a href="#temoignage">
           <img src="assets/img/icone_groupe.png" alt="icone de groupe" />
+        </a>
         </div>
         <div class="icon">
+          <a href="#footer">
           <img src="assets/img/icone_mail.png" alt="icone de mail" />
+        </a>
         </div>
         <div class="logo">
           <img src="assets/img/Logo_e_d.png" alt="logo de l'agence de voyage" />
@@ -65,7 +75,7 @@
           <button id="next" class="nav-btn">›</button>
         </div>
       </section>
-      <section>
+      <section id="section-devis">
         <div class="devis">
           <h2>Envie d’y passer vos vacances ?</h2>
           <h3>Faisons une escale vers la section devis</h3>
@@ -205,7 +215,7 @@
       </section>
       <!-- crée la section des destinations phares -->
       <section id="topDestinations">
-        <h2>Nos destinations phares</h2>
+        <h2 >Nos destinations phares</h2>
         <!-- crée le conteneur des destinations phares -->
         <div id="cards">
           <!-- crée un modèle de card qui comptera à chaque fois d'abord l'image puis le titre et enfin un petit texte acrocheur et un bouton pour en savoir plus -->
@@ -268,7 +278,7 @@
           </div>
         </div>
       </section>
-      <section class="galerie">
+      <section id="galerie">
         <h2>Notre galerie photos</h2>
         <div class="photo">
           <img src="assets/img/paysage1.png" alt="" />
@@ -277,7 +287,7 @@
           <img src="assets/img/paysage4.png" alt="" />
         </div>
       </section>
-      <section class="temoignage">
+      <section id="temoignage">
         <h2>Témoignages de nos clients</h2>
         <div class="commentaire">
           <div>
@@ -308,7 +318,7 @@
               <!-- il faut le prénom du clients/ sa note(avec des étoiles)/son commentaire -->
               <h3>
                 Mathis [Autriche]<img
-                  class="date"
+                  class="four_star"
                   src="assets/img/four_star.svg"
                   alt="quatre étoile"
                 />
@@ -383,7 +393,7 @@
               <h3>
                 Antoine [Pérou]
                 <img
-                  class="date"
+                  class="four_star"
                   src="assets/img/four_star.svg"
                   alt="quatre étoiles"
                 />
@@ -400,7 +410,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <h2>Nous Contacter</h2>
       <div class="footer">
         <div id="left">
