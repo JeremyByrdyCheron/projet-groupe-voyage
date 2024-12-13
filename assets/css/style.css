@@ -102,6 +102,14 @@ header {
   padding: 20px;
 }
 
+#accueil h1 {
+  color: #709791;
+}
+
+#accueil h2 {
+  color: #709791;;
+}
+
 #car_images {
   /* Ce paramètre permet de le positionner les flèches correctement sur l'image */
   position: relative;
