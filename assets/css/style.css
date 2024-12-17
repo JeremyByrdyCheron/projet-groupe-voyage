@@ -169,9 +169,13 @@ header {
 * {
   margin: 0;
 }
-.devis h2, h3{
+.text-devis h2, h3{
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #709791;
+  font-weight: bold;
 }
 #prix {
   color: #f7f4e9;
